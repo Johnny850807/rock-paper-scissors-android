@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffcee"
+    tools:context="com.afinal.youjinchen.rock_paper_scissors.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:id="@+id/infoTxt"
+        android:text="請點選出拳！"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/aiFist"
+                android:padding="35dp"
+                android:src="@drawable/bossbaby"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="35dp"
+            android:text="Hello World!"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/s"
+                android:id="@+id/s"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                tools:ignore="NestedWeights"
+                android:onClick="onFistClick"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/r"
+                android:id="@+id/r"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:onClick="onFistClick"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:src="@drawable/p"
+                android:id="@+id/p"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:onClick="onFistClick"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
